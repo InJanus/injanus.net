@@ -12,6 +12,10 @@
     <div class="sidenav" >
       <a href="#about" title = "About">About</a>
       <a href="#coop" title = "Co-op">Co-op</a>
+      <a href="#experience" title = "Experience">Experience</a>
+      <a href="#StrengthsSkills" title = "Strengths">Strengths</a>
+      <a href="#StrengthsSkills" title = "Skills">Skills</a>
+      <a href="data/Resume.pdf" title = "Resume">Resume</a>
       <div class="connect">
         <a href="https://www.facebook.com/brian.culberson.3"><img src="data/Facebook.png" height="42px" width="42px"></a>
         <a href="https://www.linkedin.com/in/brian-culberson-0b6211171/"><img src="data/LinkedIn.png"height="42px" width="42px"></a>
@@ -19,19 +23,55 @@
     </div>
     </div>
 
-    <div class="main">
-      <h2 id="about">Brian Culberson</h2>
-      <div id="aboutsection">
-        <img id="facepic" src="data/IMG_3024.PNG">
-        <p>{{about}}</p>
-        
+    <div class="main"> 
+      <div class="aboutsection">
+        <div id="background">
+            <img id="facepic" src="data/IMG_3024.PNG">
+            <h2 id="about">Brian Culberson</h2>
+            <p>{{about}}</p>
+            
+        </div>
       </div>
-      <h2 id="coop">Co-op Experience</h2>
-      <p>{{coop1}}</p>
-      <p>{{coop2}}</p>
-      <p>{{coop3}}</p>
+      <div class="coopSection">
+        <div id="background">
+          <h2 id="coop">Co-op Experience</h2>
+          <p>{{coop1}}</p>
+          <p>{{coop2}}</p>
+          <p>{{coop3}}</p>
+        </div>
+      </div>
       <!-- next will be the slideshow for the experiences -->
-    </div>
-    
+      <div class="experienceSection">
+        <div id="background">
+          <h2 id="experience">Experience</h2>
+          <!-- add pictures for angular with ng repeat -->
+          <div id="slideshow">
+            <img style="width: 100%; height: auto;" ng-if="isCurrentSlideIndex($index)" ng-repeat="photo in photos" ng-src="data/{{photo.src}}">
+            <button id="buttonLeft" ng-click="moveLeft()"><</button>
+            <button id="buttonRight" ng-click="moveRight()">></button>
+            <p ng-repeat="photo in photos" ng-if="isCurrentSlideIndex($index)">{{photo.text}}</p>
+          </div>
+        </div>
+      </div>
+      <div id="StrengthsSkills">
+        
+          <div class="strSection">
+            <div id="background">
+            <h2>Strengths</h2>
+            <p ng-repeat="strength in strengths">{{strength.text}}</p>
+            </div>
+          </div>
+          <div class="strSection">
+            <div id="background">
+            <h2>Skills</h2>
+            <p ng-repeat="skill in skills">{{skill.text}}</p>
+            </div>
+          </div>
+      </div>
+      <footer class="footer">
+        <p>Posted by: Brian Culberson</p>
+        <p>Contact information: <a href="mailto:briannculberson@gmail.com">briannculberson@gmail.com</a>.</p>
+      </footer>
+    </div>    
   </body>
 </html> 

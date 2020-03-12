@@ -1,10 +1,13 @@
 body {
   font-family: "Lato", sans-serif;
+  background-image: url("data/background.jpg");
+  background-size: cover;
 }
 
 .connect{
   position: fixed;
   bottom: 10px;
+  padding-left: 1%;
 }
 
 .sidenav {
@@ -48,25 +51,83 @@ body {
 .main {
   margin-left: 120px; /* Same as the width of the sidenav */
   font-size: 14px; /* Increased text to enable scrolling */
-  padding: 20px 10px;
+  padding-top: 20px;
 }
 .main h2 {
   font-size: 28px;
 }
 #facepic {
   /* old image but it will do */
-  height: 400px;
+  height: 300px;
   width: auto;
   float: right;
   padding-bottom: 20px;
   padding-left: 20px;
-  
-
 }
-#aboutsection{
+.aboutsection{
   display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 300px;
+}
+.strSection{
+  float: left;
+  width: 50%;
+  padding-bottom: 300px;
+  text-align: center;
+}
+#background{
+  background-color: #00001a;
+  color: white;
+  width: 100%;
+  padding: 20px;
+  display: flow-root;
 }
 
+#StrengthsSkills{
+  height: auto;
+  padding-bottom: 300px;
+}
+.experienceSection{
+  text-align: left;
+  width: 100%;
+  padding-bottom: 300px;
+}
+
+.coopSection{
+  padding-bottom: 300px;
+}
+
+footer{
+  color: gray;
+  text-align: center;
+  font-size: 8px;
+}
+#slideshow{
+  display: block;
+  max-width: 750px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#buttonLeft{
+  float: left;
+  transform: translate(50%, -800%);
+  background: transparent;
+  color: white;
+  font-weight: bold;
+  outline: none;
+}
+
+#buttonRight{
+  float: right;
+  transform: translate(-50%, -800%);
+  background: transparent;
+  color: white;
+  font-weight: bold;
+  outline: none;
+}
 @media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
