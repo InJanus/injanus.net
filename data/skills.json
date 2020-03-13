@@ -1,8 +1,6 @@
 [
-    {"text":"skill1"},
-    {"text":"skill2"},
-    {"text":"skill3"},
-    {"text":"skill4"},
-    {"text":"skill5"},
-    {"text":"skill6"}
+    {"text":"C++, Java, Python, WebDev(HTML, CSS, JS), Angular JS"},
+    {"text":"Electronic Design, Digital Design"},
+    {"text":"AWS, Elastic Search, Flask API Development"},
+    {"text":"Linux, Windows, Mac"}
 ]

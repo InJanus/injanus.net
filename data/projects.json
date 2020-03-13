@@ -1,7 +1,6 @@
 [
-    {"id":"img1" , "src":"IMG_4507.JPG" , "text":"test1"},
-    {"id":"img2" , "src":"IMG_4507.JPG" , "text":"test2"},
-    {"id":"img3" , "src":"IMG_4507.JPG" , "text":"test3"},
-    {"id":"img4" , "src":"IMG_4507.JPG" , "text":"test4"},
-    {"id":"img5" , "src":"IMG_4507.JPG" , "text":"test5"}
+    {"id":"img1" , "src":"IMG_4507.JPG" , "text":"Creating a cusom rgb strip controller gave me a lot of experience with working with microcontrollers and working on getting my skills sharpened with C++. This is seen with a clock as well to show the time as well as change a certian color at a certian time."},
+    {"id":"img2" , "src":"IMG_4704.JPG" , "text":"This is a digital design lab from one of my classes as a 2nd year. i learned alot about gates and logic of creating a circut from scratch"},
+    {"id":"img3" , "src":"Capture.JPG" , "text":"This is a program that I use to get my music from youtube videos. I first get the list of url's from youtube by serching for them. After that my program will go thorugh each one and download a high quality mp3 version of the video. It has helped my problem with getting music for free!"},
+    {"id":"img4" , "src":"Capture2.JPG" , "text":"This program is my custom email client. this gets my email from my gmail account. From there I can read it and delete it. This is useful when you have a limmited computer connection and you need to connect to your email quickly. Overall a good learning experience and getting my skills sharpened even more."}
 ]

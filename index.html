@@ -28,8 +28,8 @@
         <div id="background">
             <img id="facepic" src="data/IMG_3024.PNG">
             <h2 id="about">Brian Culberson</h2>
-            <p>{{about}}</p>
-            
+            <p>{{about1}}</p>
+            <p>{{about2}}</p>
         </div>
       </div>
       <div class="coopSection">
@@ -46,7 +46,7 @@
           <h2 id="experience">Experience</h2>
           <!-- add pictures for angular with ng repeat -->
           <div id="slideshow">
-            <img style="width: 100%; height: auto;" ng-if="isCurrentSlideIndex($index)" ng-repeat="photo in photos" ng-src="data/{{photo.src}}">
+            <img class="pictures" ng-if="isCurrentSlideIndex($index)" ng-repeat="photo in photos" ng-src="data/{{photo.src}}">
             <button id="buttonLeft" ng-click="moveLeft()"><</button>
             <button id="buttonRight" ng-click="moveRight()">></button>
             <p ng-repeat="photo in photos" ng-if="isCurrentSlideIndex($index)">{{photo.text}}</p>
@@ -54,15 +54,12 @@
         </div>
       </div>
       <div id="StrengthsSkills">
-        
+        <div id="background">
           <div class="strSection">
-            <div id="background">
             <h2>Strengths</h2>
             <p ng-repeat="strength in strengths">{{strength.text}}</p>
-            </div>
           </div>
           <div class="strSection">
-            <div id="background">
             <h2>Skills</h2>
             <p ng-repeat="skill in skills">{{skill.text}}</p>
             </div>
